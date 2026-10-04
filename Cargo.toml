@@ -1,5 +1,5 @@
 [package]
-name = "sibyl"
+name = "sibyl-gate"
 version = "0.1.0"
 edition = "2021"
 rust-version = "1.75"
@@ -11,6 +11,12 @@ description = "Oracle-gated memory: secrets sealed behind events — an organism
 keywords = ["memory", "oracle", "sealed", "sovereignty", "agents"]
 categories = ["cryptography"]
 readme = "README.md"
+
+[lib]
+# The crates.io package is `sibyl-gate` (the bare `sibyl` name
+# is taken); the library keeps the short name so `use sibyl::…`
+# stays stable.
+name = "sibyl"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }

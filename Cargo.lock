@@ -399,7 +399,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "sibyl"
+name = "sibyl-gate"
 version = "0.1.0"
 dependencies = [
  "aes-gcm",
