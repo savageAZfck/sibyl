@@ -63,12 +63,6 @@ fn now_secs() -> u64 {
         .unwrap_or(0)
 }
 
-fn sha256(data: &[u8]) -> [u8; 32] {
-    let mut out = [0u8; 32];
-    out.copy_from_slice(&Sha256::digest(data));
-    out
-}
-
 fn sha256_hex(data: &[u8]) -> String {
     hex::encode(Sha256::digest(data))
 }
